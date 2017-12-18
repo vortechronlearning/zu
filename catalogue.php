@@ -54,7 +54,7 @@ include_once 'catalogue_controller.php';
         <p class="badge" href="">Name: <?= $_SESSION['query']['name'] ?></p>
         <p class="badge" href="">Brand: <?= $_SESSION['query']['brand'] ?></p>
         <p class="badge" href="">Type: <?= $_SESSION['query']['type'] ?></p>
-        <p class="btn btn-primary text-md" @click="reset">Reset</p>
+        <a class="py-1 px-3 bg-grey-light shadow cursor-pointer rounded" @click="reset">Reset Search Query</a>
       </div>
       <?php endif ?>
 
