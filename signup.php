@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include_once "database.php" ?>
+<?php
+include_once "database.php";
+?>
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,14 +29,21 @@
       <?php include_once "alert.php" ?>
 
       <div class="panel panel-default">
-        <div class="panel-heading">Login</div>
+        <div class="panel-heading">Sign Up</div>
         <div class="panel-body p-6">
 
-              <input type="text" class="form-control mb-3" name="email" placeholder="Email">
+              <input type="text" class="form-control mb-3" name="passcode" placeholder="Passcode" required>
 
-              <input type="text" class="form-control mb-3" name="password" placeholder="Password">
-              <button class="btn btn-primary" name="submit" value="login">Submit</button>
-              <a href="signup.php" class="btn btn-secondary" name="submit">Sign Up</a>
+              <input type="text" class="form-control mb-3" name="name" placeholder="Name" required>
+
+              <input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
+
+              <input type="text" class="form-control mb-3" name="password" placeholder="Password" required>
+
+              <input type="text" class="form-control mb-3" name="password_retype" placeholder="Retype Password" required>
+
+              <button class="btn btn-primary" name="submit" value="signup">Submit</button>
+              <a href="login.php" class="btn btn-secondary" name="submit">Login</a>
         </div>
       </div>
     </div>

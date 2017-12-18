@@ -5,6 +5,7 @@ use Illuminate\Database\Capsule\Manager as Database;
 
 include_once 'database.php';
 include_once 'catalogue_controller.php';
+include_once 'auth.php';
 
 ?>
 

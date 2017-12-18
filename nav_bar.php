@@ -18,7 +18,9 @@
       <li><a href="catalogue.php?page=1">Catalogue</a></li>
       <li><a href="search.php">Search</a></li>
     </ul>
+
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="staffs.php?edit=<?= $_SESSION['id'] ?>"><?= $_SESSION['name'] ?></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -26,6 +28,7 @@
             <li><a href="customers.php">Customers</a></li>
             <li><a href="staffs.php">Staffs</a></li>
             <li><a href="orders.php">Orders</a></li>
+            <li><a href="logout.php">Logout</a></li>
           </ul>
         </li>
       </ul>

@@ -1,0 +1,3 @@
+<?php foreach($_SESSION['errors'] as $error) : ?>
+  <div class="alert alert-danger" role="alert"><?= $error ?></div>
+<?php endforeach ?>
